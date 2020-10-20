@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Hello!</title>
-    
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-    
+    <link rel="stylesheet" href="/style.css" />
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-  </head>  
+  </head>
+  
   <body>
     <li>
       <a href="page2.html">Page 2</a>
     </li>
     <h1 id="titre1">Créer votre propore page de site !</h1>
-    <h2>Changer le titre </h2>
-    <input type="text" name="changer" value="">
-    <br>
-    <input type="button" value="Changer" onclick='document.getElementById("titre1").innerHTML = "changer.value"'> <br>
-    
-    
-    
-    <p>
-      I'm your cool new webpage. Made with <a href="https://glitch.com">Glitch</a>!
-    </p>
-
+    <div id="ct">
+      <h2>Changer le titre</h2>
+      <input type="text" name="changer" value="" id="titre_change" />
+      <br />
+      <input type="button" value="Changer" onclick="change_titre()" />
+      <input
+        type="button"
+        value="Changer la couleur du titre"
+        onclick="change_titre_c()"/>
+      <br />
+      <button type="button" onclick="dispa_titre()">
+        Disparition du changement de titre
+      </button>
+    </div>
+    <br />
+    <button type="button" onclick="background_change()">
+      Choisissez la couleur de fond
+    </button>
   </body>
 </html>
