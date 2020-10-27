@@ -4,6 +4,15 @@
 // prints "hi" in the browser's dev tools console
 console.log("hi");
 
+function menu() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
 function change_titre() {
   document.getElementById("titre1").innerHTML = titre_change.value;
 }
